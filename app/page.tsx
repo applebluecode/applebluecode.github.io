@@ -19,10 +19,8 @@ export default function Home() {
         <section className="py-12">
           <div className="space-y-6">
             <p>
-              I am a first-year master&apos;s student at Wuhan University,
-              advised by <a className="underline">Hai Lin</a>. Prior to this, I
-              earned my B.Eng. degree from Anhui Jianzhu University, advised by{" "}
-              <a className="underline">Feilu Wang</a>.
+              I am a first-year master&apos;s student at Wuhan University. Prior to this, I
+              earned my B.Eng. degree from Anhui Jianzhu University.
             </p>
             <p>
               My research focuses on reinforcement learning and world models,
