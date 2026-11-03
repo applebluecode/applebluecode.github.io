@@ -1,5 +1,6 @@
 import { Bitcount_Grid_Double } from 'next/font/google';
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 
 const getBitcountGridDouble = Bitcount_Grid_Double({
@@ -18,24 +19,27 @@ export function Navigation() {
         >
           Junjie Wu
         </Link>
-        <ul className="flex gap-8 text-sm font-poppins font-light">
-          <li>
-            <Link
-              href=""
-              className="hover:text-zinc-600 dark:hover:text-zinc-400 transition"
-            >
-              CV
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="mailto:junjwu@whu.edu.cn"
-              className="hover:text-zinc-600 dark:hover:text-zinc-400 transition"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="flex items-center gap-8">
+          <ul className="flex gap-8 text-sm font-poppins font-light">
+            <li>
+              <Link
+                href=""
+                className="hover:text-zinc-600 dark:hover:text-zinc-400 transition"
+              >
+                CV
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="mailto:junjwu@whu.edu.cn"
+                className="hover:text-zinc-600 dark:hover:text-zinc-400 transition"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   );
